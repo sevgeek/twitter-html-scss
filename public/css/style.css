@@ -1,0 +1,122 @@
+body {
+	/* сбрасываем внутренний отступ */
+	padding: 0;
+	/* сбрасываем наружный отступ */
+	margin: 0;
+	/* цвет фона */
+	background-color: #ffffff;
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	/* способ расчета внутренний высоты */
+	box-sizing: border-box;
+
+	/* 85 процентов ширины от родительского элемента */
+	width: 85%;
+
+	/* автоматическая высота от дочерних элемента */
+	height: auto;
+
+	/* сбрасывания внутреннего отступа */
+	padding: 0;
+
+	/* сбрасывание наружного отступа */
+	margin: 0 auto;
+
+	/* цвет фона */
+	/* background-color: #ccc; */
+}
+
+.flex-container {
+	/* Это флекс контейнер */
+	display: flex;
+
+	/* Определяем направление элементов: строка */
+	flex-direction: row;
+
+	/* Запрещаем перенос элементов */
+	flex-wrap: nowrap;
+
+	/* Размещаем элементы равномерно по пространству */
+	justify-content: space-between;
+}
+
+nav {
+	display: block;
+	box-sizing: border-box;
+
+	width: 20%;
+	height: auto;
+	min-height: 100px;
+}
+
+nav .logo-container {
+	display: block;
+	position: relative;
+	height: 55px;
+	box-sizing: border-box;
+	padding: 0 24px;
+}
+
+.logo-container img {
+	position: absolute;
+	width: 45px;
+	bottom: 0;
+}
+
+.menu-container {
+	display: block;
+	box-sizing: border-box;
+
+	padding: 24px;
+}
+
+.menu-list {
+	list-style-type: none;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 0;
+}
+
+.menu-list li {
+	margin-bottom: 24px;
+}
+
+.menu-list li:last-child {
+	margin-bottom: 0px;
+}
+
+.menu-list-item {
+	/* This is flex container */
+	display: flex;
+
+	/* Set elements direction */
+	flex-direction: row;
+
+	/* Disallow wrap elements */
+	flex-wrap: nowrap;
+
+	/* Choosing of point center */
+	justify-content: start;
+
+	align-items: center;
+}
+
+.menu-list-item img {
+	width: 30px;
+}
+
+.menu-list-item p {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-weight: 600;
+	margin-left: 24px;
+}
+
+.menu-list-item:hover {
+	color: #1DA1F2;
+	cursor: pointer;
+}
