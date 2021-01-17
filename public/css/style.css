@@ -120,3 +120,72 @@ nav .logo-container {
 	color: #1DA1F2;
 	cursor: pointer;
 }
+
+.feed {
+	margin: 0;
+	padding: 0;
+	display: block;
+	box-sizing: border-box;
+	width: 60%;
+	height: auto;
+	border-left: 1px solid #d6d6d6;
+	border-right: 1px solid #d6d6d6;
+}
+
+.feed .feed-navigation {
+	display: flex;
+	box-sizing: border-box;
+
+	width: 100%;
+	height: 50px;
+
+	margin: 0;
+	padding: 32px 24px;
+
+	/* Определяем направление элементов: строка */
+	flex-direction: row;
+
+	/* Запрещаем перенос элементов */
+	flex-wrap: nowrap;
+
+	/* Размещаем элементы равномерно по пространству */
+	justify-content: start;
+
+	align-items: center;
+}
+
+.return-button:hover {
+	cursor: pointer;
+}
+
+.account-desc {
+	display: block;
+	box-sizing: border-box;
+
+	padding: 0px 24px;
+}
+
+.account-desc p {
+	margin: 0;
+	padding: 0;
+}
+
+.account-desc p:first-child {
+	font-weight: 600;
+}
+
+.account-desc p:last-child {
+	font-size: 13px;
+	color: #969696;
+}
+
+.info {
+	display: block;
+	box-sizing: border-box;
+
+	margin: 0;
+	padding: 0;
+
+	width: 20%;
+	height: auto;
+}
