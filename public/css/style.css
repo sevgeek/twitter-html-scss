@@ -216,6 +216,77 @@ nav .logo-container img {
 	margin-top: 16px;
 }
 
+/* Стилизируем кнопку перевода */
+.account-desc .account-info .translate {
+	margin-top: 16px;
+	font-size: 13px;
+}
+
+/* Меняем цветки кнопки перевода на синий при наведении курсора */
+.account-desc .account-info .translate:hover {
+	color: #1DA1F2;
+	cursor: pointer;
+}
+
+/* Стилизируем дату регистрации */
+.account-desc .account-info .data-join {
+	margin-top: 16px;
+	font-size: 16px;
+	color: #868686;
+}
+
+/* Создаем общий блок */
+.account-desc .account-info .follow-data {
+	margin-top: 16px;
+
+	width: 40%;
+
+	display: flex;
+
+	flex-direction: row;
+
+	flex-wrap:nowrap;
+
+	justify-content: space-between;
+} 
+
+/* Создаем блок для подписок(following) */
+.account-desc .account-info .follow-data .following {
+	width: 40%;
+
+	display: flex;
+
+	flex-direction: row;
+
+	flex-wrap:nowrap;
+
+	justify-content: space-between;
+}
+
+/* Добавляем серый цвет following.у */
+.account-desc .account-info .follow-data .following p:last-child {
+	color: #868686;
+}
+
+
+/* Создаем блок для подписчиков(followers) */
+.account-desc .account-info .follow-data .followers {
+	width: 45%;
+
+	display: flex;
+
+	flex-direction: row;
+
+	flex-wrap:nowrap;
+
+	justify-content: space-between;
+}
+
+/* Добавляем серый цвет followers.у */
+.account-desc .account-info .follow-data .followers p:last-child {
+	color: #868686;
+}
+
 .return-button:hover {
 	cursor: pointer;
 }
@@ -233,13 +304,75 @@ nav .logo-container img {
 }
 
 .feed-navigation .account-desc p:first-child {
-	font-weight: 600;
+	font-weight: 600; 0.5;
 }
 
 .feed-navigation .account-desc p:last-child {
 	font-size: 13px;
 	color: #969696;
 }
+
+/*Стилизируем новостную навигацию*/
+.feed .news-navigation {
+	margin-top: 16px;
+
+	width: 100%;
+
+	display: flex;
+	box-sizing: border-box;
+
+	flex-direction: row;
+
+	flex-wrap:nowrap;
+
+	justify-content: space-around;
+
+	padding: 0px 16px 16px;
+
+	border-bottom: 1px solid #d6d6d6;
+}
+
+/*Добавляем серый цвет новостной навигации*/
+.feed .news-navigation p {
+	color: #969696;
+}
+
+/*Добавляем цвета при наведении курсора*/
+.feed .news-navigation p:hover {
+	color: #1DA1F2;
+	cursor: pointer;
+	border-bottom: 3px solid;
+}
+
+/*Оформляем общий блок*/ 
+.news {
+
+	margin-top: 16px;
+
+	width: 40%;
+
+	display: flex;
+
+	flex-direction: row;
+
+	flex-wrap:nowrap;
+
+	justify-content: space-between;
+
+	} 	
+
+	.news .profile-photo img {
+		position: relative;
+		border-radius: 50%;
+		width: 60px;
+		border: 3px solid white;
+		margin-left: 18px;
+		transform: translateY(10px)
+	
+	}
+
+
+
 
 .info {
 	display: block;
