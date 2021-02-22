@@ -228,6 +228,13 @@ nav .logo-container img {
 	cursor: pointer;
 }
 
+/*Придаем обтекание картинке */
+.account-info img {
+	margin-right: 10px;
+	float: left;
+	width: 20px;
+}
+
 /* Стилизируем дату регистрации */
 .account-desc .account-info .data-join {
 	margin-top: 16px;
@@ -314,7 +321,6 @@ nav .logo-container img {
 
 /*Стилизируем новостную навигацию*/
 .feed .news-navigation {
-	margin-top: 16px;
 
 	width: 100%;
 
@@ -327,7 +333,7 @@ nav .logo-container img {
 
 	justify-content: space-around;
 
-	padding: 0px 16px 16px;
+	padding: 0px;
 
 	border-bottom: 1px solid #d6d6d6;
 }
@@ -341,7 +347,50 @@ nav .logo-container img {
 .feed .news-navigation p:hover {
 	color: #1DA1F2;
 	cursor: pointer;
+}
+
+.tweets {
+	padding: 16px;
+}
+
+.tweets:hover {
+	padding: 16px;
 	border-bottom: 3px solid;
+	color: #1DA1F2;
+	cursor: pointer;
+}
+
+.replies {
+	padding: 16px;
+}
+
+.replies:hover {
+	padding: 16px;
+	border-bottom: 3px solid;
+	color: #1DA1F2;
+	cursor: pointer;
+}
+
+.media {
+	padding: 16px;
+}
+
+.media:hover {
+	padding: 16px;
+	border-bottom: 3px solid;
+	color: #1DA1F2;
+	cursor: pointer;
+}
+
+.likes {
+	padding: 16px;
+}
+
+.likes:hover {
+	padding: 16px;
+	border-bottom: 3px solid;
+	color: #1DA1F2;
+	cursor: pointer;
 }
 
 /*Оформляем общий блок*/ 
