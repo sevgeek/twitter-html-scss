@@ -246,7 +246,7 @@ nav .logo-container img {
 .account-desc .account-info .follow-data {
 	margin-top: 16px;
 
-	width: 40%;
+	width: 100%;
 
 	display: flex;
 
@@ -254,12 +254,12 @@ nav .logo-container img {
 
 	flex-wrap:nowrap;
 
-	justify-content: space-between;
+	justify-content: flex-start;
 } 
 
 /* Создаем блок для подписок(following) */
 .account-desc .account-info .follow-data .following {
-	width: 40%;
+	width: 250px;
 
 	display: flex;
 
@@ -267,18 +267,19 @@ nav .logo-container img {
 
 	flex-wrap:nowrap;
 
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 /* Добавляем серый цвет following.у */
 .account-desc .account-info .follow-data .following p:last-child {
 	color: #868686;
+	margin-left: 16px;
 }
 
 
 /* Создаем блок для подписчиков(followers) */
 .account-desc .account-info .follow-data .followers {
-	width: 45%;
+	width: 100%;
 
 	display: flex;
 
@@ -286,12 +287,13 @@ nav .logo-container img {
 
 	flex-wrap:nowrap;
 
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 /* Добавляем серый цвет followers.у */
 .account-desc .account-info .follow-data .followers p:last-child {
 	color: #868686;
+	margin-left: 16px;
 }
 
 .return-button:hover {
@@ -329,24 +331,37 @@ nav .logo-container img {
 
 	flex-direction: row;
 
-	flex-wrap:nowrap;
-
-	justify-content: space-around;
-
-	padding: 0px;
+	flex-wrap: nowrap;
 
 	border-bottom: 1px solid #d6d6d6;
 }
 
+.feed .news-navigation .whiteline {
+
+	width: 100%;
+
+	display: flex;
+	box-sizing: border-box;
+
+	flex-direction: row;
+
+	flex-wrap: nowrap;
+
+	border-bottom: 3px solid white;
+
+	justify-content: center;
+}
+
 /*Добавляем серый цвет новостной навигации*/
-.feed .news-navigation p {
+.feed .news-navigation .whiteline {
 	color: #969696;
 }
 
 /*Добавляем цвета при наведении курсора*/
-.feed .news-navigation p:hover {
+.feed .news-navigation .whiteline:hover {
 	color: #1DA1F2;
 	cursor: pointer;
+	border-bottom: 3px solid #1DA1F2;
 }
 
 .tweets {
