@@ -255,7 +255,7 @@ nav .logo-container img {
 	flex-wrap:nowrap;
 
 	justify-content: flex-start;
-} 
+}
 
 /* Создаем блок для подписок(following) */
 .account-desc .account-info .follow-data .following {
@@ -313,7 +313,7 @@ nav .logo-container img {
 }
 
 .feed-navigation .account-desc p:first-child {
-	font-weight: 600; 0.5;
+	font-weight: 600;
 }
 
 .feed-navigation .account-desc p:last-child {
@@ -408,35 +408,119 @@ nav .logo-container img {
 	cursor: pointer;
 }
 
-/*Оформляем общий блок*/ 
-.news {
-
-	margin-top: 16px;
-
-	width: 40%;
-
+/* Лента твитов */
+.tweets-feed {
 	display: flex;
+	box-sizing: border-box;
 
-	flex-direction: row;
+	flex-direction: column;
+	align-items: flex-start;
 
-	flex-wrap:nowrap;
+	width: 100%;
+	height: auto;
+}
 
-	justify-content: space-between;
+.tweets-feed .tweet {
+	display: flex;
+	box-sizing: border-box;
+	padding: 16px;
 
-	} 	
+	flex-flow: row nowrap;
+	align-items: flex-start;
 
-	.news .profile-photo img {
-		position: relative;
-		border-radius: 50%;
-		width: 60px;
-		border: 3px solid white;
-		margin-left: 18px;
-		transform: translateY(10px)
-	
-	}
+	border-bottom: 1px solid #d6d6d6;
+}
 
+.tweets-feed .tweet img {
+	margin-right: 16px;
+}
 
+.tweet .tweet-author {
+	width: 75px;
+	border-radius: 50%;
+}
 
+.tweets-feed .tweet a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.tweet-info {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.tweet-info p {
+	margin-right: 12px;
+}
+
+.tweet-info p:last-child {
+	margin-right: 0px;
+}
+
+.tweet-info_author {
+	font-weight: bold;
+}
+
+.tweet-info_username {
+	color: #868686;
+}
+
+.tweet-info_timestamp {
+	color: #868686;
+}
+
+.tweet-info_timestamp::before {
+	content: "\2022";
+	margin-right: 8px;
+}
+
+.tweet-content {
+	margin-top: 8px;
+}
+
+.tweet-content_link-preview {
+	display: block;
+	border: 1px solid #d6d6d6;
+	border-radius: 14px;
+	width: auto;
+	height: auto;
+	transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+	margin-top: 12px;
+}
+
+.tweet-content_link-preview:hover .preview-site .title {
+	color: #1DA1F2;
+}
+
+.preview-picture {
+	display: block;
+
+	width: 100%;
+	height: 350px;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
+.preview-site {
+	box-sizing: border-box;
+	padding: 12px;
+}
+
+.preview-site .title {
+	font-weight: bold;
+}
+
+.preview-site .desc {
+	font-size: 14px;
+	color: #868686;
+}
 
 .info {
 	display: block;
