@@ -532,3 +532,64 @@ nav .logo-container img {
 	width: 30%;
 	height: auto;
 }
+
+.activity-block {
+
+	margin-top: 16px;
+
+	width: 100%;
+
+	display: flex;
+	box-sizing: border-box;
+
+	flex-direction: row;
+
+	flex-wrap: nowrap;
+
+}
+
+.actions {
+
+	width: 100%;
+
+	display: flex;
+	box-sizing: border-box;
+
+	flex-direction: row;
+
+	flex-wrap: nowrap;
+
+}
+
+.activity-block img {
+	width: 30px;
+}
+
+.commercial {
+	width: 30%;
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;	
+	padding: 12px 24px;
+}
+
+.search-bar {
+	min-height: 45px;
+	height: auto;
+	width: 100%;
+
+	display: flex;
+	flex-flow: row nowrap;
+	box-sizing: border-box;
+	background-color: #f3f8ff;
+	border-radius: 20px;
+	align-items: center;
+	padding: 0px 16px;
+	font-size: 14px;
+	color: #749abc;
+}
+
+.search-icon {
+	width: 20px;
+	margin-right: 12px;
+}
