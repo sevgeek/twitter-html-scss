@@ -593,3 +593,47 @@ nav .logo-container img {
 	width: 20px;
 	margin-right: 12px;
 }
+
+.big-board {
+	margin-top: 16px;
+	height: 300px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	box-sizing: border-box;
+}
+
+.first-column {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	border-right: 1px solid white;
+	background-image: url("/public/img/jpg/zoloto.jpg");
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: cover;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	align-items: flex-end;
+}
+
+.first-column img {
+	position: relative;
+	width: 100%;
+	border-bottom-left-radius: 20px;
+}
+
+.second-column {
+	display: block;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	border-left: 1px solid white;
+	background-image: url("/public/img/jpg/ren_tv_2.jpg");
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: cover;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
